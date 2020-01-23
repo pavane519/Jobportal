@@ -1,0 +1,8 @@
+<?init class="com.pennanttech.Team2.Session.Verify_loginCredentials"?>
+<zk>
+	<style src="Style/Appliedpage.css"/>
+	<div use="com.pennanttech.Team2.User.Appliedctrl">
+		<vbox id="v" style="margin-top:40px;"> 
+		</vbox>
+	</div>
+</zk>

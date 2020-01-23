@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+.z-button:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #34445a;
+}
+		.new1{    color: #f91c45;margin-left: 25px;	}
+			body { margin: 0;padding: 0 0px;}
+	 	.z-a:visited { color: #000;}
+		.z-a:visited:hover {color: #6b6969;}
+		.z-a:hover { color: #000;}
+		.z-a { color: #6b6969;margin-left: 84px;}
+		.Whitebox{float:right;margin-top:120px;margin-right:207px;}		
+		.z-window {  padding:0px;}
+		.text{margin-left:25px;margin-top:50px;}
+		.text2{margin-left:25px;margin-top:15px;}
+		.z-button{ background-color: #f91c45;}
+		.submit
+		.z-button:hover{  background-color: #f91c45;  box-shadow: 0px 0px 2px black; }
+		.z-button:focus{  background-color: #f91c45;  box-shadow: 0px 0px 2px black;   border-color:#bfbfbf;}
+		.z-textbox:focus{    border-radius:4px;   position: relative;   border-color:red;}
+		.submit{background-color: #34445a;}
+		.one-edge-shadow {-webkit-box-shadow: 0 8px 6px -6px black;	   -moz-box-shadow: 0 8px 6px -6px black; box-shadow: 0 8px 6px -6px black;}
+		.one-edge-shadow:hover {-webkit-box-shadow: 0 8px 8px -6px black;-moz-box-shadow: 0 10px 6px -6px black;  box-shadow: 0 8px 10px -6px black;}

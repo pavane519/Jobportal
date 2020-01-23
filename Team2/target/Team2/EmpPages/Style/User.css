@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+.z-north-body, .z-south-body, .z-west-body, .z-center-body, .z-east-body {padding :0px;}
+		body { margin: 0;padding: 0px 0px;}
+		button:hover{ box-shadow: 1px 1px 12px black;  border-color:#f91c45 ;  border-radius:4px; border-color:white   }
+		.subnav{margin-top:50px;border:0px;}
+		.subnav:active{text-color:green;}
+		.z-window{padding:0px;}
+		.z-label.search{margin-left:7px;}
+		.z-button:focus {  border-color: #34445a;   }
+		.button { height: 42px; border-radius: 4px;  background-color:#f91c45;  text-align: center;   padding: 9px 19px;  margin-top:153px;  margin-left:35px;  border-radius: 5px;   transition: all 0.5s;  cursor: pointer;  color : white;  border-color : transparent;}
+		.z-a:visited { color: #87898c;}
+		.z-a:visited:hover { color: black;}
+		.header a.logo { font-size: 25px; font-weight: bold;}
+		.header a:hover { background-color: #ffffff; color: black;}
+		.header-right { float: right;}
+		.z-north, .z-south, .z-west, .z-center, .z-east {border:none;}
+		@media screen and (max-width: 500px) { .header-right {  float: none; }}
+		::-webkit-scrollbar{width: 15px;}
+
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px #fbfbfb00;border-radius: 10px;}
+
+::-webkit-scrollbar-thumb {background: linear-gradient(45deg, #0064ed, #ffffff);border-radius: 10px;}

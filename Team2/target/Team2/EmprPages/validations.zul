@@ -1,0 +1,278 @@
+<?page title="Registeration" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:x="xhtml">
+
+    <style>   
+        .nav_toolbar .z-toolbarbutton-content i { font-size: 20px;}
+        .nav_tabs .z-tabpanel { padding: 0; border-bottom: 0 none;}
+        .nav_tabs .z-tabpanels .z-toolbarbutton-content { padding: 4px;}
+        .nav_category { cursor:pointer; }
+        .nav_text { color: #696569; font-size : 24px; font-weight: bold;}
+        .p{ color:red;}
+        .subdiv{ margin-top:150px; }
+        .z-tabs{ background: white;}
+        .z-tab-selected{background: #34445a;}
+        .z-tab-selected:hover{background: #34445a;}
+        .z-tab{background: #34445a;}
+        .z-tab-text {color: #c1bfbf;}
+        .z-tab-selected{border-bottom: 1.5px solid #f90039;}
+        .z-tab-selected .z-tab-text{color: #f5f5f5;}
+        .z-tab-selected .z-tab-text:hover {color: #f91c45;}
+        .z-tab:hover{background:#34445a;}
+        .z-tab-text:hover {color:#f91c45;}
+        .z-tabs-content{width: 22%;margin: 0 auto;}
+        .z-textbox:focus{border-color: #34445a;}
+        .z-textbox:hover{border-color: #34445a;}
+        .z-longbox:focus{border-color: #34445a;}
+        .z-datebox-input:focus{border-color: #34445a;}
+        .z-combobox-input:focus{border-color: #34445a;}
+        .button{position:absolute;}
+        .space{margin-left:358px;}
+        .space1{margin-left:152px;}
+        .top{margin-top:-50px;}
+   .z-tabbox { border:none;}
+        .z-window {
+ padding: 0;
+}body {
+    margin: 0;
+    padding: 0px 0px;
+} 
+        .z {
+	height: 345px !important ;
+       }
+       
+       .show{display:none;}
+       
+       .none{}
+       .z-tabbox-left>.z-tabs .z-tabs-content {
+    display: block;
+    height: 4096px;
+    width: 186px;
+}
+.z-tabbox-left>.z-tabpanels {
+    height: 100%;
+    border-left: 0px;
+    overflow:auto;
+}
+
+.z-tabbox {
+    height: 100% !important;
+}
+    </style>
+  <div id="t"   width="100%" height="100%" use= "com.pennanttech.Team2.Empr.pdf" >
+ 
+ 
+ 
+    <tabbox id="tb" height="500px"  width="100%"  orient="left"> 
+	    <tabs id="tabs" height="100%"  width="188px">
+	        <tab id="A" label="Personal Details" />
+	        <tab id="B" label="Education Details" />
+	        <tab id="C" label="Skills"/>
+	        <tab id="D" label="Project Details"/>
+	        <tab id="E" label="Experience Details"  />
+	    </tabs>
+	   <tabpanels>
+	    	<tabpanel  sclass="z">
+		  <div  align="center" class="subdiv" 
+			        		style="width:1000px;;  margin: 0 auto;margin-top: 10px;">  <separator/><separator/><separator/><separator/>
+			             <hbox  align="center">
+			                	 <div  width="100%" height="100%"  align="Right">
+			                         <label value="Name" width="150px" /><label value="*" sclass="p" />  
+			                          <textbox id="Name" width="250px" maxlength="34" constraint="no empty, /^[a-zA-Z]+$/:Please use Alphabet"/>  
+						                 <space width="50px"/>
+									 <label value="Email Id" width="150px"/><label value="*" sclass="p" /> 
+						                 <textbox  width="250px" placeholder="Eg.ram@gmail.com" maxlength="27" constraint="/.+@.+\.[a-z]+/:Please enter valid Email Id"/><separator/><separator/><separator/><space width="100px"/>
+									
+					     			 <label value="Mobile Number" width="150px"/><label value="*" sclass="p" /> 
+					                       <longbox  width="250px" maxlength="10" constraint="/[0-9]{10}/:mandatory,no empty"/><space width="10px"/>
+					                  <label value="Date Of Birth "  width="150px" /><label value="*" sclass="p" /> 
+		                                    <datebox  width="250px" placeholder="Eg.Dec 9, 1996" readonly="true" constraint="before 20010101,no empty"/><separator/> <separator/> <separator/>  
+					                       
+					     			<label value="Gender" width="150px"/><label value="*" sclass="p" /> 
+					                <radiogroup >
+					     		           <radio label="Male" value="Male"/>
+								           <radio label="Female" value="Female" />
+					                </radiogroup><separator/><separator/><separator/>
+					                <!-- <hbox style="padding-left:100px;">
+					   						<button label="UploadResume" width="95px" />
+					                </hbox><separator/><separator/> <separator/><separator/>
+					                 -->
+					               <hbox style="padding-left:100px;">
+					   						<button label="Next" onClick="tb.selectedTab=B" width="95px" style="background-color:#34445a"/>
+					   						
+					                </hbox><separator/><separator/> <separator/><separator/>
+								</div>
+		                 </hbox>
+			        </div>
+			       
+		  </tabpanel>
+	        <tabpanel> 
+		     <hbox>
+			  	<vbox id="vb">
+			      <div  align="center" class="subdiv" 
+			      	style="width:1000px;margin: 0 auto;">
+			         <separator/><separator/><separator/>
+			            <hbox  align="center">
+			              	<div width="100%" height="100%"  align="Right"><separator/><separator/>
+		                      	<label value="Degree:"  width="150px" /><label value="*"/>
+		                      	<textbox   placeholder="Eg.Btech" width="250px" maxlength="30" constraint="/^[a-zA-Z]+$/:Please use Alphabet" style="margin-right:-21px"/> 
+		                      	
+								<space width="50px"/>
+				 				<label value="Field of Study:" width="150px"/><label value="*"/>   
+		                               <textbox  width="250px" maxlength="30" constraint="no empty"/><separator/><separator/><separator/>
+								<label value="School or College name:" width="150px"/><label value="*"/>  
+		                               <textbox  width="250px" maxlength="30" constraint="no empty" style="margin-right:54px"/><space width="50px"/>
+		             			<label value="City:" width="150px" /><label value="*" sclass="p" />  
+		                               <textbox width="250px" maxlength="25"  constraint="/^[a-zA-Z]+$/:Please use Alphabet" style="margin-right:0px"/><separator/><separator/><separator/>
+				                 <label value="State:" width="150px" /><label value="*" sclass="p" />   
+		                               <textbox   width="250px" maxlength="25" constraint="/^[a-zA-Z]+$/:Please use Alphabet"/><space width="50px"/>
+				     			<label value="Percentage:" width="150px" /><label value="*" sclass="p" />  
+		                               <textbox  width="250px" maxlength="3" constraint="/[0-9]{10}/:Please use Numbers"/><separator/><separator/><separator/>
+		                        <label value="Graduation Date:" width="150px" /><label value="*" sclass="p" />   
+		                              <datebox  format="yyyy-MM" constraint="no empty,no future" forward="onChange=onSearchDateBoxMonth"></datebox>
+		                               
+				     			<separator/><separator/><separator/>
+				     			
+				     	
+					 		</div>
+		                 </hbox>
+		                
+			         </div>
+			          </vbox>
+			          
+			     <div style="margin-top:60px">
+			          	<button  iconSclass="z-icon-plus" onClick="t.add(vb.getId())" style="margin-left:80px;margin-top:50px;padding: 0px 0px;background-color:#1baf19" width="25px"/><separator/><separator/>
+			          	 
+				     		<button  iconSclass="z-icon-trash" onClick="t.remove(vb.getId())" style="margin-left:80px;padding: 0px 0px;background-color:#f91c45" width="25px"/><separator/><separator/>
+				     			
+				     		   
+				     		    
+				     	
+				     </div>	
+		     </hbox>
+		     <button label="Next" onClick="tb.selectedTab=C" style="margin-left:823px;background-color:#34445a" width="95px" />
+		   </tabpanel>
+	   
+	     <tabpanel >
+	     <hbox>
+		    <vbox sclass="space" id="vb1">
+			      <div  align="center" >
+			         <separator/><separator/><separator/>
+			            <hbox  align="center">
+			              	<div width="100%" height="100%"  align="Right"><separator/><separator/>
+		                      	
+		                      	 <label value="Skills:" width="150px"  /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                              <textbox width="250px" constraint="no empty"/>
+		                      	<separator/><separator/><separator/><separator/><separator/>
+				 			
+		                        <label value="Skills-Level:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                              
+    <combobox  constraint="no empty">
+    <comboitem label="Beginner"/>
+    <comboitem label="Intermediate"/>
+    <comboitem label="Expert"/>
+    </combobox>
+		           <separator/>                    
+				<separator/><separator/><separator/>
+				     			
+				     	</div>
+					 </hbox>
+		                 
+			         </div>
+			         </vbox>
+			         			<div>
+				<button  iconSclass="z-icon-plus" onClick="t.add(vb1.getId())" style="margin-left:80px;margin-top:50px;padding: 0px 0px;background-color:#1baf19" width="25px"/>
+					 	<separator/>
+				     			
+				     			<button  iconSclass="z-icon-trash" onClick="t.remove(vb1.getId())" style="margin-left:80px;padding: 0px 0px;background-color:#f91c45" width="25px"/>
+		                 </div>
+			        
+		      </hbox>
+		      <button label="Next" onClick="tb.selectedTab=D" style="margin-left:665px;background-color:#34445a"  width="95px"/>
+		   </tabpanel>
+		   
+		   	   
+		    <tabpanel> 
+		   <hbox>
+		            <vbox id="vb2">
+			      <div align="center">
+			         <separator/><separator/><separator/>
+			            <hbox align="center">
+			              	<div width="100%" height="100%"  align="Right"><separator/><separator/>
+		                      	
+		                      	 <label value="Project-Name" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                              <textbox width="250px" maxlength="30" constraint="no empty"/>
+		                      	<separator/><separator/><separator/>
+				 			
+		                        <label value="Project-Description:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                             
+		                              <textbox width="250px" constraint="no empty"/><separator/><separator/>
+                                    <label value="Experienced" style="margin-left:-100px"  width="150px"/><label value="*" sclass="p" /> 
+					                <radiogroup>
+					     		           <radio label="YES"  value="YES" onClick="t.show()"/>
+								           <radio label="NO"   value="NO"  onClick="Exp.setVisible(false)"/>
+					                </radiogroup>
+		                               
+				     			<separator/><separator/>
+				     			</div>
+				     		   </hbox>
+					 		</div>
+		                 </vbox>
+		                 	 			<div>
+					 		<button  iconSclass="z-icon-plus" onClick="t.add(vb2.getId())" style="margin-left:80px;margin-top:50px;padding: 0px 0px;background-color:#1baf19" width="25px"/>
+					 	<separator/>
+				     			
+				     			<button  iconSclass="z-icon-trash" onClick="t.remove(vb2.getId())" style="margin-left:80px;padding: 0px 0px;background-color:#f91c45" width="25px"/>
+		                 </div>
+		                  </hbox>
+		                 <button label="Next" onClick="tb.selectedTab=E "  style="margin-left:280px;background-color:#34445a"  width="135px"/>
+			  
+		   </tabpanel >
+		    <tabpanel>
+		      <hbox> 
+		         <vbox id="vb3">
+		           <div align="center">
+		       <separator/><separator/><separator/>
+			            <hbox align="center">
+			              	<div width="100%" height="100%"  align="Right"><separator/><separator/>
+		                      	
+		                      	 <label value="Company Name:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                              <textbox width="250px" maxlength="25" constraint="/^[a-zA-Z]+$/:Please use Alphabet"/><space width="50px"/>
+		                      
+				 			
+		                        <label value="Job-Role:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                             
+		                              <textbox width="250px" maxlength="25" constraint="no empty"/><separator/><separator/><separator/>
+                                    
+		                                <label value="Start-Date:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                             
+		                              <textbox width="250px" constraint="no empty"  /><space width="50px"/>
+		                              
+		                               <label value="End-Date" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                             
+		                              <textbox width="250px" constraint="no empty" /><separator/><separator/><separator/>
+		                              
+		                              
+		                               <label value="No.of.years-Worked:" width="150px" /><label value="*" sclass="p" /> <space width="10px"></space>  
+		                             
+		                              <intbox width="250px" maxlength="2" constraint="no empty"/>
+				     			<separator/><separator/><separator/>
+				     			</div>
+				     			</hbox>
+				     			</div>
+				     			</vbox> 
+	               	 			<div>
+					 						<button  iconSclass="z-icon-plus" onClick="t.add(vb3.getId())" style="margin-left:80px;margin-top:50px;padding: 0px 0px;background-color:#1baf19" width="25px"/>
+					 					<separator/>
+				     				
+				     						<button  iconSclass="z-icon-trash" onClick="t.remove(vb3.getId())" style="margin-left:80px;padding: 0px 0px;background-color:#f91c45" width="25px"/>
+		                 	</div>
+				     			
+				   				</hbox>
+				     			
+				     		<button label="Submit"  onClick="t.submit()" width="135px" style="background-color:#34445a"/>
+		 	
+			</tabpanel>
+</tabpanels>
+</tabbox>
+</div>
+</zk>

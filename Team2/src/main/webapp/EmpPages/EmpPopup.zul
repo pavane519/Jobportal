@@ -1,0 +1,23 @@
+<zk>
+	<style src="Style/EmpPopup.css"/>
+	<groupbox sclass="topdiv" width="1080px" height="90px">
+	</groupbox>
+	<groupbox sclass="align" width="550px" height="400px" >
+		<hbox>
+			<div sclass="align1">
+				<image src="/images/Content/fresh.png"  width="100px" height="100px"></image><separator/>
+				<button sclass="color2" label="I'm a fresher"></button>
+	 		</div>
+	 		<div sclass="align2">
+				<image src="/images/Content/experience.png" sclass="space"  width="120px" height="120px"></image><separator/>
+				<button sclass="color1" label="I'm Experienced"></button>
+			</div>
+		</hbox>
+	</groupbox>
+</zk>
+
+
+
+
+	
+

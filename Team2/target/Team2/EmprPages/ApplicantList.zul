@@ -1,0 +1,85 @@
+<?page title="Home" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style src="Style/ApplicantList.css"/>
+	<hbox>
+		<a href="" class="logo"><image src="/images/Content/LOGO.jpg" width="175px" height="58px" style=" margin-left: 30px; margin-top: 30px; "></image></a>
+		
+		<vbox style="float:right;margin-left: 1100px;    margin-top: 30px;">
+			<hbox>
+				<span sclass="z-icon-home" style="color: #34445b;font-weight: bolder;"/><a href="EmprHome.zul"><label id="user_role_label" style="color: #34445b;font-weight: bolder;" value="Home"/></a>
+			</hbox>
+			<div id="click8"  use="com.pennanttech.Team2.Login.EmprLogin_Ctrl">
+				<button iconSclass="z-icon-sign-out" label="Logout" style="margin-bottom: 10px;     color: #fff;    background-color: #f91c45;" onClick="click8.logout()"/>
+			</div>
+		</vbox>
+		
+
+	</hbox>
+	<window  border="normal" id="win3" use="com.pennanttech.Team2.Empr.ApplicantList_Ctrl">
+<hbox id="hb">
+
+<label id="notfound" style="font-size: 30px;color: #f91c45;margin-left: 400px;" />
+<listbox id="AppList" style="width:763px" onClick="win2.setVisible(true)">
+        <listhead  >
+            <listheader label="Job Title" sort="auto" />
+            <listheader label="Applicant Name" sort="auto" />
+            <listheader label="Applied On" sort="auto" />
+            <listheader label="Work Experience" sort="auto" />
+            <listheader label="Status" sort="auto" />
+        </listhead>
+	 </listbox>
+	<hlayout id="hl"/> 
+	<div  width="1px;" height="700px;" style="background: #34445a;margin-left:35px;" id="line" /> 
+<div id="win2"   width="100%" height="100%" visible="false" style=" margin-left:35px;background: rgba(255, 255, 255, 0.6);
+    margin-top: 55px;">
+    <image src="/images/Content/user.jpg" style="margin-left: 150px;" />
+	<vbox id="vb" sclass="v1">
+	
+	<separator></separator><separator></separator><separator></separator><separator></separator>
+		<hbox><label value="Name:" Style="color: #009090; font-weight:bold;"/> <separator></separator><label   id="lb1"/></hbox>
+		<hbox><label value="Date of Birth:" Style="color: #009090; font-weight:bold;"/> <label   id="lb2"/></hbox>
+		<hbox><label value="Gender:" Style="color: #009090; font-weight:bold;"/> <label   id="lb6" /></hbox>
+		<separator></separator><separator></separator>
+		
+		<hbox><label value="Highest Qualification:" Style="color: #009090; font-weight:bold;"/> <label   id="lb3" /></hbox>
+		<hbox><label value="Skills:" Style="color: #009090; font-weight:bold;"/> <label   id="lb4" /></hbox>
+		<hbox> <span sclass="z-icon-briefcase" Style="color:#009090;"/>
+		
+		
+		 <label id="lb5"/></hbox>
+		<div style="margin-top: -45px;
+    margin-left: 279px;">
+		<label   value="Resume:" Style="color: #009090; font-weight:bold;" />
+		
+		<button label="Download" id="Resume"  onClick="win3.showResume()" style="background-color: #b1b3b3;     padding: 4px ;     margin-top: -10px; font-size: 13px;"/>
+		</div>
+		
+		<separator></separator><separator></separator>
+		<label value="Contact Details" Style="color: #b1b3b3; font-weight:bold;"/>
+		<vbox>	
+			<span sclass="z-icon-envelope" Style="color:#009090;"/> <label  id="lb8" />
+			<span sclass="z-icon-phone"  style="color:#009090; margin-left:230px"/> <label   id="lb7" />
+			
+			</vbox>
+		<hbox></hbox>
+		
+	
+<separator></separator><separator></separator>	
+	<separator></separator><separator></separator>	
+<div style="margin-left:130px">	
+<hbox id="del">
+
+<button label="Approve" id= "approve" onClick="win3.StatusApprove()" sclass="Approve"/>
+<button label="Reject" id= "reject" onClick="win3.StatusReject()" style="margin-left:40px" width="96px" sclass="Reject"/>
+
+</hbox>
+</div>
+</vbox>
+
+</div>
+
+</hbox>
+</window>
+	
+    
+</zk>

@@ -1,0 +1,28 @@
+<?init class="com.pennanttech.Team2.Session.Verify_loginCredentials"?>
+<?page title="Home" contentType="text/html;charset=UTF-8"?>
+<zk>
+	
+
+	<style src="Style/User.css"/>
+	
+	<hbox style="overflow:auto;">
+	 <a href="" class="logo"><image src="/images/Content/LOGO.jpg" width="175px" height="58px" style=" margin-left: 50px;margin-top: 20px; "></image></a>
+		<div class="header">
+ 			<div class="header-right" >
+			    <a ><label  style="margin-left:400px;font-size: 25px;" value="Home" id="home" apply="com.pennanttech.Team2.User.Navigation_Ctrl"/></a>
+			    <a><label style="font-size: 25px;" value="Profile" id="profile" apply="com.pennanttech.Team2.User.Navigation_Ctrl"/></a>
+			    <a><label style="font-size: 25px;" value="Applied" id="applied" apply="com.pennanttech.Team2.User.Navigation_Ctrl"/></a>
+			</div>
+		</div>
+		<vbox style="float:right;">
+			<div id="click"  use="com.pennanttech.Team2.Login.UserLogin_Ctrl">
+				<button iconSclass="z-icon-sign-out" style="    color: #fff;    background-color: #f91c45;    margin-left: 100px;    margin-top: 38px;" label="logout"  onClick="click.logout()"/>
+			</div>
+		</vbox>
+	</hbox>
+	<borderlayout >
+		<center>
+		<include  id="x"  src="UserHome.zul" style="overflow:auto;"></include> 
+		</center>
+	</borderlayout>
+</zk>

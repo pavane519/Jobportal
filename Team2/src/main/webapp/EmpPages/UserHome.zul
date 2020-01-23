@@ -1,0 +1,110 @@
+<?init class="com.pennanttech.Team2.Session.Verify_loginCredentials"?>
+<?page title="Home" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style src="Style/UserHome.css"/>
+	<div id = "Home" use="com.pennanttech.Team2.User.UserHome_Ctrl">
+	<div  Style="background-image:url('../images/Background/BACKGROUND2.jpg');background-repeat: no-repeat;-webkit-background-size: cover;
+  			-moz-background-size: cover; -o-background-size: cover; background-size: cover;"  width="100%" height="330px" >	
+		<hbox>
+			<image src="/images/Content/tie.png" width="220px" height="420px" class="tie"></image>
+	   		<vbox style="margin-left:15px; margin-top:120px;">
+	   			<label class="search" value="Job Role" width="150px" onClick="Home.search()" style="color:white"/>
+	   			<vbox sclass="user">
+					<div hflex="1" sclass="highlight">
+						 <hlayout>						 
+			                <span sclass="z-icon-briefcase"/>
+			            
+			               		<combobox sclass="cbox" id="combo1" autodrop="true" buttonVisible="false"/>
+			               
+			               </hlayout>
+            			</div>
+				</vbox>
+     		</vbox>
+     		<separator></separator>
+    	 	<vbox style="margin-left:47px; margin-top:120px;">
+       		 	<label class="search" value="Location" width="150px" style="color:white" />
+       		 	<vbox sclass="user">
+					<div hflex="1" sclass="highlight">
+						 <hlayout>						 
+			                <span sclass="z-icon-map-marker"/>
+			                <combobox sclass="cbox1" id="combo2" autodrop="true" buttonVisible="false"/>
+			                
+			               </hlayout>
+            			</div>
+				</vbox>
+  			</vbox>
+  			
+			<hlayout>
+					<button class="button" label="Search" onClick="Home.search()"/>
+							
+				</hlayout>
+		
+	
+		</hbox>		
+	</div>
+	<hbox>
+
+<vbox sclass="vb" id ="vb" style="margin-top:60px;">
+	
+</vbox>
+
+<div visible="false" id="div" style="margin-left: 73px;
+    margin-top: 70px;
+    width: 848px;
+    height: 375px;
+    padding: 36px;
+      border-width: 1px;
+    border-style: groove;
+    border-color: #d6d5d5;
+    overflow:scroll;"  >	
+
+<vbox id ="vbox" >
+
+<label id="role" style="font-size: 26px;" />
+<label id="Cmpy" style="font-weight: bold; color: #34445a;"  />
+<hbox>
+<span Sclass="z-icon-map-marker"/> <label id="loc" />
+</hbox>
+<hbox>
+ <span Sclass="z-icon-briefcase"/> <label Value="Experience required in years:" style="font-weight: bold; color: #34445a;"  /> 
+<label id="Exp" />
+</hbox>
+<label Value="Job Description:" style="font-weight: bold; color: #34445a;line-height: 28px;" />
+<label id="desc" style="line-height: 28px;"/>
+<hbox>
+<label Value="Minimum Qualification:" style="font-weight: bold; color: #34445a;line-height: 28px;"/>
+<label id="qual" style="line-height: 28px;" />
+</hbox>
+<hbox>
+<label Value="Salary(in LPA):" style="font-weight: bold; color: #34445a;line-height: 28px;" />
+<label id="salary" style="line-height: 28px;"/>
+</hbox>
+<hbox>
+<label Value="Skills required:" style="font-weight: bold; color: #34445a;line-height: 28px;" />
+
+<label id="skills" style="line-height: 28px;" />
+</hbox>
+<hbox>
+<label Value="Lastdate to Apply:" style="font-weight: bold; color: #34445a;line-height: 28px;"  />
+<label id="ldate"  style="line-height: 28px;"/>
+</hbox>
+<button  id="Apply" label="Apply" visible="false" onClick="Home.ApplyJob(div.getTabindex())" style="width: 92px;background-color:#34445a;"/>
+<label  id="Applied" value="Applied" visible="false" style="border-width: 1px;
+    border-style: outset;
+    border-color: rgb(52, 68, 90);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: rgb(255, 255, 255);
+    color: #34445a;
+    line-height: 30px;
+"/>
+
+
+ </vbox>
+
+</div>
+</hbox>
+</div>
+</zk>

@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+.align{
+margin-top:5px;
+margin-left:200px;
+
+}
+ 
+ .align1{
+ margin-top:100px;
+ margin-left:70px;
+ }
+  .align2{
+ margin-top:50px;
+ margin-left:100px;
+ }
+ .color1{
+ background-color:#34445a;
+ }
+  .color2{
+ background-color:#34445a;
+ }
+ .space{
+ margin-top:35px;
+ margin-left:10px;
+ }
+.z-groupbox-content {
+       background-color:transparent;
+}
+ .topdiv{
+ background-color:#34445a;
+ }

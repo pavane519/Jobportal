@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+
+		.z-textbox:focus{border-color: #34445a;}
+        .z-textbox:hover{border-color: #34445a;}
+        .z-longbox:focus{border-color: #34445a;}
+        .z-longbox:hover{border-color: #34445a;}
+        .z-button{background-color: #34445a;}
+        .z-button:hover{background-color: #34445a;}

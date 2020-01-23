@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+      .nav_toolbar .z-toolbarbutton-content i { font-size: 20px;}
+        .nav_tabs .z-tabpanel { padding: 0; border-bottom: 0 none;}
+        .nav_tabs .z-tabpanels .z-toolbarbutton-content { padding: 4px;}
+        .nav_category { cursor:pointer; }
+        .nav_text { color: #696569; font-size : 24px; font-weight: bold;}
+        .p{ color:red;}
+        .subdiv{ margin-top:150px; }
+        .z-tabs{ background: #34445a;    }
+        .z-tab-selected{background: #34445a;}
+        .z-tab-selected:hover{background: #34445a;}
+        .z-tab{background: #34445a;margin: auto;}
+        .z-tab-text {color: #c1bfbf;}
+        .z-tab-selected{border-bottom: 1.5px solid #f90039;}
+        .z-tab-selected .z-tab-text{color: #f5f5f5;}
+        .z-tab-selected .z-tab-text:hover {color: #f91c45;}
+        .z-tab:hover{background:none;}
+        .z-tab-text:hover {color:#f91c45;}
+        .z-tabs-content{width: 40%;margin: 0 auto;}
+        .z-textbox:focus{border-color: #34445a;}
+        .z-textbox:hover{border-color: #34445a;}
+        .z-combobox:focus{border-color: #34445a;}
+        .z-combobox:hover{border-color: #34445a;}
+        .z-decimalbox:focus{border-color: #34445a;}
+        .z-decimalbox:hover{border-color: #34445a;}
+        .z-intbox:focus{border-color: #34445a;}
+        .z-intbox:hover{border-color: #34445a;}
+        .z-datebox:focus{border-color: #34445a;}
+        .z-datebox:hover{border-color: #34445a;}

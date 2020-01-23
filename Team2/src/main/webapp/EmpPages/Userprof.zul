@@ -1,0 +1,58 @@
+<?init class="com.pennanttech.Team2.Session.Verify_loginCredentials"?>
+<?page title="Profile page" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+
+</style>
+
+<style src="Style/UserProf.css"/>
+	
+	<div use="com.pennanttech.Team2.User.ProfileCtrl" id="prof">
+			<hbox>
+				<image src="/images/Content/Idcard.png" style=" margin-top: 80px; margin-left: 44px;width: 401px;"/>
+					<div Style="margin-top: 373px; margin-left: -278px;">
+			   			 <vbox>
+							<label id="name" style="font-weight:bold;"/><separator/>
+							<hbox>
+								<label value="DOB:"/>
+								<label id="DOB" style="font-weight:bold;"/>
+							</hbox>
+							<hbox sclass="a">
+								<label value="Experience"/><span class="z-icon-briefcase"/><label value=":"/>
+								<label sclass="p" id="fresher" style="font-weight:bold;"/><label value="Years"/>
+							</hbox>
+						</vbox>
+					</div >
+			</hbox>
+			<div Style="margin-left:474px; margin-top:-462px">
+				<vbox>
+					<hbox>
+						<span class="z-icon-pencil"></span>
+						<button label="Edit Profile" onClick="prof.popup()" sclass="button"/>
+					</hbox><separator bar="true" width="350px" />
+					<hbox>
+						<label value="Education:"/>
+						<label id="Ed"/><label id="course" style="font-weight:bold;"/>
+					</hbox>
+					<hbox>
+						<label value="Skills:"/>
+						<label id="skills"/><label id="lang" style="font-weight:bold;"/>
+					</hbox>
+					<hbox>
+					<label  value="Resume:" style="font-weight:bold;"/> 
+					<a onClick="prof.Upload()">
+					<label id="Resume" /></a>
+					</hbox><separator/>
+					<label id="Contactdetails"/>
+					<hbox>
+						<span class="z-icon-envelope"></span>
+						<label id="email" style="font-weight:bold;"/>
+					</hbox>
+					<hbox>
+						<span class="z-icon-phone"></span>
+						<label id="number" style="font-weight:bold;"/>
+					</hbox>
+				</vbox>
+		 	</div>
+		 </div>
+</zk>

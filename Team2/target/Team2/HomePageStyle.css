@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+		body { margin: 0;padding: 0 0px;}
+		.z-window {  padding:0px;}
+		.magnifier{margin-left: 730px; margin-top: 134px; width: 380px; -webkit-filter: drop-shadow(0px 0px 5px black); }
+ 		.magnifier:hover { transition: all 0.3s;    position:relative;   transform: scale(1.009);  -webkit-filter: drop-shadow(0px 0px 10px black); } 
+ 		.line1{margin-left: -170px;  margin-top: 182px;overflow:visible;}
+		.line2{margin-left: -184px;  margin-top: 31px;overflow:visible;}
+		.z-button{width: 201px; height: 43px;font-size: 23px; background-color: #f91c45; box-shadow: 0px 0px 5px black; }
+		.z-button:hover{background-color: #f91c45; transition: all 1s ease;position:relative; box-shadow: 0px 0px 12px black; text-decoration: underline;}
+		.z-button:focus{  background-color: #f91c45;box-shadow: 0px 0px 14px black; border-color:#bfbfbf;}
